@@ -117,7 +117,7 @@ saveAs("JPEG", dir2 + imgName + "binary");
 //run("Convert to Mask");
  
 //setTool("rectangle");
-makeRectangle(900, 632, 3500, 3414);
+makeRectangle(900, 632, 3500, 3214);
  
 // Analyze Particles counts seed and produces data and outlines
 call("ij.plugin.filter.ParticleAnalyzer.setFontSize", 50);
@@ -127,7 +127,7 @@ run("Set Measurements...", "area center perimeter shape feret's display redirect
 run("Set Scale...", "distance=86 known=1 pixel=1 unit=inch");
  
 //choose size and shape of particles to be detected and output information
-run("Analyze Particles...", "size=3-Infinity circularity=0.00-1.00 show=Outlines display summarize results");
+run("Analyze Particles...", "size=5-Infinity circularity=0.00-1.00 show=Outlines display summarize results");
 //saving seed outline picture
 saveAs("PNG", dir3+list[i]+"outline");
 ////////////////////////End of Copy/////////////////////////////
